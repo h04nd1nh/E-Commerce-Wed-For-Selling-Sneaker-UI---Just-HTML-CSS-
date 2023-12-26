@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>PSneaker</title>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="./img/logo.png" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Account.html"><i class="fa-solid fa-user"></i></a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <form id="checkout-layout">
+        <div id="billing-infomation">
+            <div id="user-info">
+                <p>Billing Infomation</p>
+                <div class="user-info-input">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" required placeholder="ex: Dinh Van Duc Hoan">
+                </div>
+    
+                <div class="user-info-input">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" required placeholder="ex: 192 Tran Phu, Mo Lao, Ha Dong, Ha Noi">
+                </div>
+    
+                <div class="user-info-input">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" required placeholder="ex: example@gmail.com">
+                </div>
+    
+                <div class="user-info-input">
+                    <label for="phonenumber">Phone Number</label>
+                    <input type="text" id="phonenumber" name="phonenumber" required placeholder="ex: 0971182176">
+                </div>
+            </div>
+
+            <div id="additional-info">
+                <p>Additional Information</p>
+                <div class="user-info-input">
+                    <label for="ordernotes">Order notes</label>
+                    <textarea id="ordernotes" name="ordernotes" rows="5" placeholder="Notes about your order, e.g. special notes for delivery"></textarea>
+                </div>
+            </div>
+
+        </div>
+        <div id="order-summary">
+            <p>Order Summary</p>
+
+            <div class="order-product-detail">
+                <img src="img/product.webp" alt="">
+                <div id="order-product-name">
+                    <p id="product-type">Nike Air Force 1</p>
+                    <p id="product-type">Size: <span style="margin: 0;
+                        font-size: 14px;
+                        font-weight: 700;
+                        color: #5F6C72;">24</span> Color: <span style="margin: 0;
+                        font-size: 14px;
+                        font-weight: 700;
+                        color: #5F6C72;">White</span></p>
+                    <p id="product-type">1 x <span style="margin: 0;
+                        font-size: 14px;
+                        font-weight: 700;
+                        color: #3858D6;">1.000.000đ</span></p>
+                </div>
+            </div>
+
+            <div class="order-total">
+                <p>Sub-total</p>
+                <span>3.000.000đ</span>
+            </div>
+
+            <div class="order-total">
+                <p>Shipping</p>
+                <span>Free</span>
+            </div>
+
+            <div class="order-total">
+                <p>Discount</p>
+                <span>100.000đ</span>
+            </div>
+            
+            <div class="order-total">
+                <div class="line"></div>
+            </div>
+
+            
+
+            <div class="pri-order-total">
+                <p>Total</p>
+                <span>2.900.000đ</span>
+            </div>
+
+            <div class="pri-order-total">
+                <input type="text" id="code" name="code" required placeholder="Coupon Code">
+                <button>Apply Coupon</button>
+            </div>
+
+            <div id="order-button-submit">
+                <button>PLACE ORDER</button>
+            </div>
+        </div>
+
+    </form>
+</body>
+</html>

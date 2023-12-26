@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>PSneaker</title>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="./img/logo.png" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a  href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Account.html"><i class="fa-solid fa-user"></i></a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section class="section-p1" id="product-tag-des">
+        <div id="product-preview">
+            <div id="product-preview-large">
+                <img src="./img/product.webp" alt="">
+            </div>
+            <div id="product-preview-small">
+                <img src="./img/product.webp" alt="">
+                <img src="./img/product.webp" alt="">
+                <img src="./img/product.webp" alt="">
+            </div>
+        </div>
+        <div id="product-description">
+            <div id="product-description-infomation">
+                <div class="rate">
+                    <div>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span>(100 lượt đánh giá)</span>
+                </div>
+                <div id="pro-name">
+                    <h5>Nike Air Force 1</h5>
+                </div>
+                <div id="product-description-origin">
+                    <span>ID: 123456</span>
+                    <span>Availability: <span class="product-description-availability">In Stock</span></span>
+                    <span>Brand: Nike</span>
+                    <span>Category: Nike</span>
+                </div>
+                <div id="product-description-price">
+                    <h4 id="sale-price">700.000 đ   <span>1.000.000 đ</span></h4>
+                    <div id="product-description-price-saleoff">
+                        <h4>30% OFF</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div id="product-optional">
+                <div class="product-optional-selection">
+                    <span>Size</span>
+                    <div class="product-optional-selection-input">
+                        <select name="size" id="size">
+                            <option value="option1">Tùy chọn 1</option>
+                            <option value="option2">Tùy chọn 2</option>
+                            <option value="option3">Tùy chọn 3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="product-optional-selection">
+                    <span>Color</span>
+                    <div class="product-optional-selection-input">
+                        <select name="color" id="color">
+                            <option value="option1">Tùy chọn 1</option>
+                            <option value="option2">Tùy chọn 2</option>
+                            <option value="option3">Tùy chọn 3</option>
+                        </select>
+                    </div>
+                </div>
+    
+                <div class="product-optional-selection">
+                    <span>Quantity</span>
+                    <div class="product-optional-selection-input">
+                        <div id="product-optional-quantity">
+                            <input type="number" id="quantityValue" name="quantity" value="1" required>
+                        </div>
+                    </div>
+                    <div class="product-optional-selection-button">
+                        <div id="button-area">
+                            <button onclick=""><i class="fa-solid fa-minus"></i></button>
+                            <button onclick=""><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="product-submit-form">
+                <button>Add to cart</button>
+                <button>Buy now</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section-p1" id="product-content">
+        <div id="product-content-tab">
+            
+            <div id="product-tab-title">
+                <h1>Description</h1>
+            </div>
+            
+            <div id="tab-content">
+                <div id="description-content">
+                    <h2>Description</h2>
+                    <span>The most spanowerful MacBook Pro ever is here. With the blazing-fast M1 Pro or M1 Max chip — the first Apple silicon designed for pros — you get groundbreaking performance and amazing battery life. Add to that a stunning Liquid Retina XDR display, the best camera and audio ever in a Mac notebook, and all the ports you need. The first notebook of its kind, this MacBook Pro is a beast. M1 Pro takes the exceptional performance of the M1 architecture to a whole new level for pro users.</span>
+                </div>
+
+                <div id="description-feature">
+                    <h2>Feature</h2>
+                    <div>
+                        <i class="fa-solid fa-wrench"></i>
+                        <p>Free 1 Year Warranty</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-truck"></i>
+                        <p>Free Shipping & Fasted Delivery</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-money-bill"></i>
+                        <p>100% Money-back guarantee</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-headset"></i>
+                        <p>24/7 Customer support</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-credit-card"></i>
+                        <p>Secure payment method</p>
+                    </div>
+                </div>
+
+                <div id="shipping-infomation">
+                    <h2>Shipping Information</h2>
+                    <p>Courier: <span>2-4 days. free shipping</span></p>
+                    <p>Local Shipping: <span>up to one week</span></p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="section-p1" id="product-review">
+        <div id="product-review-tab">
+            <div id="review-tab-title">
+                <h1>Review</h1>
+            </div>
+
+            <div id="tab-review">
+                <div id="tab-customer">
+                    <div class="customer-comment">
+                        <div id="customer-name">
+                            <img src="img/logo.png" alt="">
+                            <h2 id="customer-name">Dinh Van Duc Hoan</h2>
+                        </div>
+                        <div id="comment">
+                            <span>Good quality shoes, fast delivery, carefully packaged</span>
+                        </div>
+                    </div>
+    
+                    <div class="customer-comment">
+                        <div id="customer-name">
+                            <img src="img/logo.png" alt="">
+                            <h2 id="customer-name">Dinh Van Duc Hoan</h2>
+                        </div>
+                        <div id="comment">
+                            <span>Good quality shoes, fast delivery, carefully packaged</span>
+                        </div>
+                    </div>
+                    <div class="customer-comment">
+                        <div id="customer-name">
+                            <img src="img/logo.png" alt="">
+                            <h2 id="customer-name">Dinh Van Duc Hoan</h2>
+                        </div>
+                        <div id="comment">
+                            <span>Good quality shoes, fast delivery, carefully packaged</span>
+                        </div>
+                    </div>
+                    <div class="customer-comment">
+                        <div id="customer-name">
+                            <img src="img/logo.png" alt="">
+                            <h2 id="customer-name">Dinh Van Duc Hoan</h2>
+                        </div>
+                        <div id="comment">
+                            <span>Good quality shoes, fast delivery, carefully packaged</span>
+                        </div>
+                    </div>
+                    <div class="customer-comment">
+                        <div id="customer-name">
+                            <img src="img/logo.png" alt="">
+                            <h2 id="customer-name">Dinh Van Duc Hoan</h2>
+                        </div>
+                        <div id="comment">
+                            <span>Good quality shoes, fast delivery, carefully packaged</span>
+                        </div>
+                    </div>
+                    <div class="customer-comment">
+                        <div id="customer-name">
+                            <img src="img/logo.png" alt="">
+                            <h2 id="customer-name">Dinh Van Duc Hoan</h2>
+                        </div>
+                        <div id="comment">
+                            <span>Good quality shoes, fast delivery, carefully packaged</span>
+                        </div>
+                    </div>
+                    <div class="customer-comment">
+                        <div id="customer-name">
+                            <img src="img/logo.png" alt="">
+                            <h2 id="customer-name">Dinh Van Duc Hoan</h2>
+                        </div>
+                        <div id="comment">
+                            <span>Good quality shoes, fast delivery, carefully packaged</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab-rate">
+                    <div>
+                        <div class="star-rate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="star-rate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="star-rate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="star-rate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="star-rate">
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <p id="5-rate">(100 rate)</p>
+                        <p id="4-rate">(100 rate)</p>
+                        <p id="3-rate">(100 rate)</p>
+                        <p id="2-rate">(100 rate)</p>
+                        <p id="1-rate">(100 rate)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="input-comment">
+                <img src="./img/logo.png" alt="">
+                <form action="" method="post">
+                    <textarea id="comment" name="comment" rows="5" placeholder="Add a comment here"></textarea>
+                    <button>Comment</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong> 192 Tran Phu, Mo Lao, Ha Dong, Ha Noi</p>
+            <p><strong>Phone: </strong> +84 971.182.176</p>
+            <p><strong>Hour: </strong> 8:00 - 18:00, Mon - Fri</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Infomation</a>
+            <a href="#">Privacy Pocily</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+        </div>
+
+        <div class="col">
+            <h4>PayMent Menthod</h4>
+            <a href="#">Momo</a>
+            <a href="#">VietQR</a>
+            <a href="#">VNPay</a>
+            <a href="#">Cash on Delivery</a>
+        </div>
+
+        <div class="col">
+            <h4>Shipping Partner</h4>
+            <a href="#">Giaohangtietkiem</a>
+            <a href="#">Giaohangnhanh</a>
+            <a href="#">Lalamove</a>
+            <a href="#">Ahamove</a>
+            <a href="#">GrabExpress</a>
+        </div>
+
+        <div class="copyright">
+            <p>@2023, Dinh Van Duc Hoan - Bai Tap Lon Lap Trinh Wed</p>
+        </div>
+    </footer>
+    
+</body>

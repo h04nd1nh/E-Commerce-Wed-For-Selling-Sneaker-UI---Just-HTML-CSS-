@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <title>Giỏ hàng</title>
+    </head>
+<body>
+    <section id="header">
+        <a href="#"><img src="./img/logo.png" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Account.html"><i class="fa-solid fa-user"></i></a></li>
+                <li><a class="active" href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+            </ul>
+        </div>
+    </section>
+    <section id="cart-layout">
+        <div id="shopping-card">
+            
+            <div id="shopping-card-table">
+                <p>Cart</p>
+                <table>
+                    <thead>
+                        <tr id="table-title">
+                            <th>Products</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Sub-total</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div>
+                                    <img src="img/product.webp" alt="">
+                                    <div>
+                                        <p>Nike Air Force 1</p>
+                                        <p id="product-type">Size: <span style="margin: 0;
+                                            font-size: 14px;
+                                            font-weight: 700;
+                                            color: #5F6C72;">24</span> Color: <span style="margin: 0;
+                                            font-size: 14px;
+                                            font-weight: 700;
+                                            color: #5F6C72;">White</span></p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <p>1.000.000đ</p>
+                            </td>
+                            <td>
+                                <div>
+                                    <i class="fa-solid fa-minus"></i>
+                                    <p>2</p>
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>
+                            </td>
+                            <td><p>200.000đ</p></td>
+                            <td><button>Remove</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <img src="img/product.webp" alt="">
+                                    <div>
+                                        <p>Nike Air Force 1</p>
+                                        <p id="product-type">Size: <span style="margin: 0;
+                                            font-size: 14px;
+                                            font-weight: 700;
+                                            color: #5F6C72;">24</span> Color: <span style="margin: 0;
+                                            font-size: 14px;
+                                            font-weight: 700;
+                                            color: #5F6C72;">White</span></p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <p>1.000.000đ</p>
+                            </td>
+                            <td>
+                                <div>
+                                    <i class="fa-solid fa-minus"></i>
+                                    <p>1111</p>
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>
+                            </td>
+                            <td><p>200.000đ</p></td>
+                            <td><button>Remove</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <img src="img/product.webp" alt="">
+                                    <div>
+                                        <p>Nike Air Force 1</p>
+                                        <p id="product-type">Size: <span style="margin: 0;
+                                            font-size: 14px;
+                                            font-weight: 700;
+                                            color: #5F6C72;">24</span> Color: <span style="margin: 0;
+                                            font-size: 14px;
+                                            font-weight: 700;
+                                            color: #5F6C72;">White</span></p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <p>1.000.000đ</p>
+                            </td>
+                            <td>
+                                <div>
+                                    <i class="fa-solid fa-minus"></i>
+                                    <p>2</p>
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>
+                            </td>
+                            <td><p>200.000đ</p></td>
+                            <td><button>Remove</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <img src="img/product.webp" alt="">
+                                    <div>
+                                        <p>Nike Air Force 1</p>
+                                        <p id="product-type">Size: <span style="margin: 0;
+                                            font-size: 14px;
+                                            font-weight: 700;
+                                            color: #5F6C72;">24</span> Color: <span style="margin: 0;
+                                            font-size: 14px;
+                                            font-weight: 700;
+                                            color: #5F6C72;">White</span></p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <p>1.000.000đ</p>
+                            </td>
+                            <td>
+                                <div>
+                                    <i class="fa-solid fa-minus"></i>
+                                    <p>2</p>
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>
+                            </td>
+                            <td><p>200.000đ</p></td>
+                            <td><button>Remove</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <img src="img/product.webp" alt="">
+                                    <div>
+                                        <p>Nike Air Force 1</p>
+                                        <p id="product-type">Size: <span style="margin: 0;
+                                            font-size: 14px;
+                                            font-weight: 700;
+                                            color: #5F6C72;">24</span> Color: <span style="margin: 0;
+                                            font-size: 14px;
+                                            font-weight: 700;
+                                            color: #5F6C72;">White</span></p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <p>1.000.000đ</p>
+                            </td>
+                            <td>
+                                <div>
+                                    <i class="fa-solid fa-minus"></i>
+                                    <p>2</p>
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>
+                            </td>
+                            <td><p>200.000đ</p></td>
+                            <td><button>Remove</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <img src="img/product.webp" alt="">
+                                    <div>
+                                        <p>Nike Air Force 1</p>
+                                        <p id="product-type">Size: <span style="margin: 0;
+                                            font-size: 14px;
+                                            font-weight: 700;
+                                            color: #5F6C72;">24</span> Color: <span style="margin: 0;
+                                            font-size: 14px;
+                                            font-weight: 700;
+                                            color: #5F6C72;">White</span></p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <p>1.000.000đ</p>
+                            </td>
+                            <td>
+                                <div>
+                                    <i class="fa-solid fa-minus"></i>
+                                    <p>2</p>
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>
+                            </td>
+                            <td><p>200.000đ</p></td>
+                            <td><button>Remove</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <img src="img/product.webp" alt="">
+                                    <div>
+                                        <p>Nike Air Force 1</p>
+                                        <p id="product-type">Size: <span style="margin: 0;
+                                            font-size: 14px;
+                                            font-weight: 700;
+                                            color: #5F6C72;">24</span> Color: <span style="margin: 0;
+                                            font-size: 14px;
+                                            font-weight: 700;
+                                            color: #5F6C72;">White</span></p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <p>1.000.000đ</p>
+                            </td>
+                            <td>
+                                <div>
+                                    <i class="fa-solid fa-minus"></i>
+                                    <p>2</p>
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>
+                            </td>
+                            <td><p>200.000đ</p></td>
+                            <td><button>Remove</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <img src="img/product.webp" alt="">
+                                    <div>
+                                        <p>Nike Air Force 1</p>
+                                        <p id="product-type">Size: <span style="margin: 0;
+                                            font-size: 14px;
+                                            font-weight: 700;
+                                            color: #5F6C72;">24</span> Color: <span style="margin: 0;
+                                            font-size: 14px;
+                                            font-weight: 700;
+                                            color: #5F6C72;">White</span></p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <p>1.000.000đ</p>
+                            </td>
+                            <td>
+                                <div>
+                                    <i class="fa-solid fa-minus"></i>
+                                    <p>2</p>
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>
+                            </td>
+                            <td><p>200.000đ</p></td>
+                            <td><button>Remove</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <img src="img/product.webp" alt="">
+                                    <div>
+                                        <p>Nike Air Force 1</p>
+                                        <p id="product-type">Size: <span style="margin: 0;
+                                            font-size: 14px;
+                                            font-weight: 700;
+                                            color: #5F6C72;">24</span> Color: <span style="margin: 0;
+                                            font-size: 14px;
+                                            font-weight: 700;
+                                            color: #5F6C72;">White</span></p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <p>1.000.000đ</p>
+                            </td>
+                            <td>
+                                <div>
+                                    <i class="fa-solid fa-minus"></i>
+                                    <p>111</p>
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>
+                            </td>
+                            <td><p>200.000đ</p></td>
+                            <td><button>Remove</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <img src="img/product.webp" alt="">
+                                    <div>
+                                        <p>Nike Air Force 1</p>
+                                        <p id="product-type">Size: <span style="margin: 0;
+                                            font-size: 14px;
+                                            font-weight: 700;
+                                            color: #5F6C72;">24</span> Color: <span style="margin: 0;
+                                            font-size: 14px;
+                                            font-weight: 700;
+                                            color: #5F6C72;">White</span></p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <p>1.000.000đ</p>
+                            </td>
+                            <td>
+                                <div>
+                                    <i class="fa-solid fa-minus"></i>
+                                    <p>2</p>
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>
+                            </td>
+                            <td><p>200.000đ</p></td>
+                            <td><button>Remove</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="card-infomation">
+            <div id="card-totals">
+                <p>Cart totals</p>
+
+                <div class="sub-card-total">
+                    <p>Sub-total</p>
+                    <span>3.000.000đ</span>
+                </div>
+
+                <div class="sub-card-total">
+                    <p>Shipping</p>
+                    <span>Free</span>
+                </div>
+
+                <div class="sub-card-total">
+                    <p>Discount</p>
+                    <span>100.000đ</span>
+                </div>
+
+                <div class="line"></div>
+                
+                <div class="pri-card-total">
+                    <p>Total</p>
+                    <span>3.100.000đ</span>
+                </div>
+            </div>
+
+            <div id="card-info-cus">
+                <p>Coupon Code</p>
+                <div>
+                    <div class="form-info">
+                        <input type="text" id="code" name="code" required placeholder="Coupon Code">
+                    </div>
+                    <button>Apply Coupon</button>
+                </div>
+                <span style="color: red;">Voucher Code kh12333333333333333333333333ông hợp lệ, vui lòng thử lại</p>   
+            </div>
+
+
+            <div id="card-button-submit">
+                <button>PROCEED TO CHECKOUT</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong> 192 Tran Phu, Mo Lao, Ha Dong, Ha Noi</p>
+            <p><strong>Phone: </strong> +84 971.182.176</p>
+            <p><strong>Hour: </strong> 8:00 - 18:00, Mon - Fri</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Infomation</a>
+            <a href="#">Privacy Pocily</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+        </div>
+
+        <div class="col">
+            <h4>PayMent Menthod</h4>
+            <a href="#">Momo</a>
+            <a href="#">VietQR</a>
+            <a href="#">VNPay</a>
+            <a href="#">Cash on Delivery</a>
+        </div>
+
+        <div class="col">
+            <h4>Shipping Partner</h4>
+            <a href="#">Giaohangtietkiem</a>
+            <a href="#">Giaohangnhanh</a>
+            <a href="#">Lalamove</a>
+            <a href="#">Ahamove</a>
+            <a href="#">GrabExpress</a>
+        </div>
+
+        <div class="copyright">
+            <p>@2023, Dinh Van Duc Hoan - Bai Tap Lon Lap Trinh Wed</p>
+        </div>
+    </footer>
+</body>
+</html>
