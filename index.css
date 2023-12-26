@@ -2020,7 +2020,7 @@ footer .copyright {
     flex-direction: column;
 }
 
-.active-content > p {
+.active-content>p {
     font-size: 18px;
     color: #191C1F;
     font-weight: 600;
@@ -2081,12 +2081,12 @@ footer .copyright {
     width: 100%;
     height: auto;
     border-radius: 10px;
-    border: 1px solid  #d63857;
-    background:  #FFF;
+    border: 1px solid #d63857;
+    background: #FFF;
     margin-bottom: 20px;
 }
 
-.account-setting > p {
+.account-setting>p {
     padding-bottom: 20px;
     padding-left: 24px;
     border-bottom: 1px solid #E4E7E9;
@@ -2176,11 +2176,11 @@ footer .copyright {
 }
 
 .order-history .pending {
-    color:#FA8232;
+    color: #FA8232;
 }
 
 .order-history .done {
-    color:#2DB224;
+    color: #2DB224;
 }
 
 .order-history .cancel {
@@ -2236,8 +2236,8 @@ footer .copyright {
     border-radius: 10px;
 }
 
-#order-detail > p {
-   
+#order-detail>p {
+
     padding-bottom: 20px;
     padding-left: 24px;
     border-bottom: 1px solid #E4E7E9;
@@ -2246,7 +2246,7 @@ footer .copyright {
     font-weight: 600;
 }
 
-#order-detail > span {
+#order-detail>span {
     padding-left: 24px;
     font-size: 16px;
 }
@@ -2313,7 +2313,7 @@ footer .copyright {
     justify-content: space-between;
     padding: 0 24px 24px 24px;
     align-items: center;
-    
+
 }
 
 #order-detail #order-detail-tag p:first-child {
@@ -2329,7 +2329,7 @@ footer .copyright {
 }
 
 #order-detail #order-detail-tag span {
-    color : #8B8E99;
+    color: #8B8E99;
     font-size: 14px;
     font-weight: 400;
 }
@@ -2339,17 +2339,17 @@ footer .copyright {
     flex-direction: column;
 }
 
-#order-detail-status > div{
+#order-detail-status>div {
     display: flex;
     flex-direction: row;
     align-items: center;
     text-align: center;
     gap: 10px;
     margin-bottom: 24px;
-    
+
 }
 
-#order-detail-status  > div i{
+#order-detail-status>div i {
     margin-left: 24px;
     height: 48px;
     width: 48px;
@@ -2358,18 +2358,19 @@ footer .copyright {
     align-items: center;
     border: 1px transparent #E4E7E9;
     border-radius: 5px;
-    
+
 }
 
 
-#order-detail-status  > div > div {
+#order-detail-status>div>div {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-#order-detail-status  > div > div > p,#order-detail-status  > div > div > span {
-    margin:0;
+#order-detail-status>div>div>p,
+#order-detail-status>div>div>span {
+    margin: 0;
 }
 
 #order-detail-product table {
@@ -2378,7 +2379,7 @@ footer .copyright {
     padding-right: 24px;
 }
 
-#order-detail-product table tr{
+#order-detail-product table tr {
     display: flex;
     padding: 10px 24px;
     align-items: center;
@@ -2388,7 +2389,7 @@ footer .copyright {
 }
 
 #order-detail-product table thead tr {
-    border: 1px solid  #E4E7E9;
+    border: 1px solid #E4E7E9;
     border-radius: 5px;
     background: #F2F4F5;
 
@@ -2422,7 +2423,7 @@ footer .copyright {
     width: 400px;
     display: flex;
     flex-direction: row;
-    gap:24px;
+    gap: 24px;
 }
 
 
@@ -2438,13 +2439,14 @@ footer .copyright {
 }
 
 #order-detail-product table tr td:nth-child(1) div p {
-    margin:0;
+    margin: 0;
     color: #3858D6;
     font-weight: 700;
 
 }
+
 #order-detail-product table tr td:nth-child(1) div span {
-    margin:0;
+    margin: 0;
 }
 
 #order-detail-product table tr td:nth-child(2) {
@@ -2514,14 +2516,14 @@ footer .copyright {
     padding: 24px;
 }
 
-#order-detail-infomation div{
+#order-detail-infomation div {
     display: flex;
     flex-direction: column;
     width: 50%;
     padding-left: 24px;
 }
 
-#order-detail-infomation div:first-child{
+#order-detail-infomation div:first-child {
     border-right: 1px solid #E4E7E9;
 }
 
@@ -2555,10 +2557,12 @@ footer .copyright {
     height: 100vh;
     border-right: 2px solid #E4E7E9;
 }
+
 #container {
     display: flex;
     flex-direction: row;
 }
+
 #navigation-menu img {
     width: 170px;
     height: auto;
@@ -2593,24 +2597,26 @@ footer .copyright {
     text-decoration: none;
     padding: 0;
     margin: 0;
-}  
+}
 
 #navigation-menu ul li i {
     width: 30px;
 }
 
-#navigation-menu ul li a,#navigation-menu ul li i {
+#navigation-menu ul li a,
+#navigation-menu ul li i {
     font-size: 18px;
     color: #8B8E99;
 }
 
 #navigation-menu .active {
     background-color: #ebebee;
-    border : 1px solid transparent;
+    border: 1px solid transparent;
     border-radius: 10px;
 }
 
-#navigation-menu .active i, #navigation-menu .active a {
+#navigation-menu .active i,
+#navigation-menu .active a {
     color: #3858D6;
 }
 
@@ -2619,10 +2625,18 @@ footer .copyright {
     width: 85vw;
 }
 
-#content > div > p {
+#content>div>p {
     font-size: 20px;
     font-weight: 600;
     color: #191C1F;
+}
+
+#content .active {
+    display: block;
+}
+
+#content>div {
+    display: none;
 }
 
 #content .dasboard-layout {
@@ -2640,7 +2654,7 @@ footer .copyright {
     border: 1px solid transparent;
     border-radius: 5px;
     padding: 25px;
-    gap:8px;
+    gap: 8px;
     align-items: center;
     justify-content: space-between;
 }
@@ -2690,4 +2704,491 @@ footer .copyright {
     font-size: 16px;
     font-weight: 600;
     color: #191C1F;
+}
+
+#content #products table {
+    width: 100%;
+    height: auto;
+    max-height: 70vh;
+    background-color: #FFF;
+    border-radius: 5px;
+}
+
+
+#content #products tr>th:nth-child(1),
+tr>td:nth-child(1) {
+    width: 12%;
+}
+
+#content #products tr>th:nth-child(2),
+tr>td:nth-child(2) {
+    width: 32%;
+}
+
+#content #products tr>th:nth-child(3),
+tr>td:nth-child(3) {
+    width: 15%;
+}
+
+#content #products tr>th:nth-child(3),
+tr>td:nth-child(4) {
+    width: 15%;
+}
+
+#content #products tr>th:nth-child(3),
+tr>td:nth-child(5) {
+    width: 15%;
+}
+
+#content #products tr>th {
+    text-align: left;
+}
+
+#content #products #product-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#content #products #product-name img {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+}
+
+#content #products #button-action button {
+    background-color: #ffffff;
+    /* Màu nền */
+    border: 1px solid #ffffff;
+    /* Màu đường viền */
+    /* color: #000000; */
+    /* Màu chữ, bạn có thể điều chỉnh màu chữ tùy ý */
+    padding: 0px 15px;
+    /* Kích thước nút */
+    font-size: 16px;
+    /* Kích thước chữ */
+    cursor: pointer;
+}
+
+
+#content #products tr>td {
+    border-top: 1px solid #E4E7E9;
+}
+
+#content #products tr>td p {
+    font-size: 16px;
+    font-weight: 550;
+    color: #667085;
+}
+
+#content #products tr>td,
+#content #products tr>th {
+    padding-left: 20px;
+}
+
+#content #products #options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+
+#content #products #options button {
+    align-items: center;
+    background-color: #1B60FF;
+    border: 0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 20px;
+    max-width: 480px;
+    min-height: 40px;
+    min-width: 0px;
+    overflow: hidden;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    touch-action: manipulation;
+    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    width: 200px;
+    height: 35px;
+}
+
+#content #products #options button:hover,
+#content #products #options button:focus {
+    background-color: #0A66C2;
+    color: #ffffff;
+}
+
+#content #products #options button:active {
+    background: #0A66C2;
+    color: rgb(255, 255, 255, .7);
+}
+
+#content #products #options button:disabled {
+    cursor: not-allowed;
+    background: rgba(0, 0, 0, .08);
+    color: rgba(0, 0, 0, .3);
+}
+
+#content #products #pagination {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#content #products #pagination button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    /* Để tạo hình tròn */
+    border: 2px solid #8B8E99;
+    /* Đường viền màu đen, bạn có thể thay đổi màu sắc tùy ý */
+    color: #8B8E99;
+    background-color: #ffffff;
+    /* Màu nền, bạn có thể thay đổi màu sắc tùy ý */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#content #products #pagination button:hover {
+    background-color: #3858D6;
+    color: #fff;
+    border: 2px solid #3858D6;
+}
+
+
+#content #products #pagination .active {
+    background-color: #3858D6;
+    color: #fff;
+    border: 2px solid #3858D6;
+}
+
+#content #categories table{
+    width: 50%;
+    background-color: #fff;
+    border-radius: 5px;
+}
+#content #categories tr>th:nth-child(1),
+tr>td:nth-child(1) {
+    width: 12%;
+}
+
+#content #categories tr>th:nth-child(2),
+tr>td:nth-child(2) {
+    width: 32%;
+}
+
+#content #categories tr>th:nth-child(3),
+tr>td:nth-child(3) {
+    width: 15%;
+}
+
+#content #categories tr>th:nth-child(3),
+tr>td:nth-child(4) {
+    width: 15%;
+}
+
+#content #categories tr>th:nth-child(3),
+tr>td:nth-child(5) {
+    width: 15%;
+}
+
+#content #categories tr>th {
+    text-align: left;
+}
+
+#content #categories #product-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#content #categories #product-name img {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+}
+
+#content #categories #button-action button {
+    background-color: #ffffff;
+    /* Màu nền */
+    border: 1px solid #ffffff;
+    /* Màu đường viền */
+    /* color: #000000; */
+    /* Màu chữ, bạn có thể điều chỉnh màu chữ tùy ý */
+    padding: 0px 15px;
+    /* Kích thước nút */
+    font-size: 16px;
+    /* Kích thước chữ */
+    cursor: pointer;
+}
+
+
+#content #categories tr>td {
+    border-top: 1px solid #E4E7E9;
+    padding: 10px 0px;
+}
+
+#content #categories tr>td p {
+    font-size: 16px;
+    font-weight: 550;
+    color: #667085;
+}
+
+#content #categories tr>td,
+#content #categories tr>th {
+    padding-left: 20px;
+}
+
+#content #categories #options{
+    margin-top: 20px;
+}
+
+
+#content #categories #options button {
+    align-items: center;
+    background-color: #1B60FF;
+    border: 0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 20px;
+    max-width: 480px;
+    min-height: 40px;
+    min-width: 0px;
+    overflow: hidden;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    touch-action: manipulation;
+    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    width: 200px;
+    height: 35px;
+}
+
+#content #categories #options button:hover,
+#content #categories #options button:focus {
+    background-color: #0A66C2;
+    color: #ffffff;
+}
+
+#content #categories #options button:active {
+    background: #0A66C2;
+    color: rgb(255, 255, 255, .7);
+}
+
+#content #categories #options button:disabled {
+    cursor: not-allowed;
+    background: rgba(0, 0, 0, .08);
+    color: rgba(0, 0, 0, .3);
+}
+
+#content #categories #pagination {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#content #categories #pagination button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    /* Để tạo hình tròn */
+    border: 2px solid #8B8E99;
+    /* Đường viền màu đen, bạn có thể thay đổi màu sắc tùy ý */
+    color: #8B8E99;
+    background-color: #ffffff;
+    /* Màu nền, bạn có thể thay đổi màu sắc tùy ý */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+#content #properties-list {
+    display: flex;
+    flex-direction: row;
+    gap:10%;
+}
+
+#content #properties-list div {
+    width: 45%;
+}
+
+
+#content #properties-list div table{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+}
+#content #properties-list div tr>th:nth-child(1),
+tr>td:nth-child(1) {
+    width: 10%;
+}
+
+#content #properties-list div tr>th:nth-child(2),
+tr>td:nth-child(2) {
+    width: 25%;
+}
+
+#content #properties-list div tr>th:nth-child(3),
+tr>td:nth-child(3) {
+    width: 10%;
+}
+
+#content #properties-list div tr>th:nth-child(3),
+tr>td:nth-child(4) {
+    width: 15%;
+}
+
+#content #properties-list div tr>th:nth-child(3),
+tr>td:nth-child(5) {
+    width: 15%;
+}
+
+#content #properties-list div tr>th {
+    text-align: left;
+}
+
+#content #properties-list div #product-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#content #properties-list div #product-name img {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+}
+
+#content #properties-list div #button-action button {
+    background-color: #ffffff;
+    /* Màu nền */
+    border: 1px solid #ffffff;
+    /* Màu đường viền */
+    /* color: #000000; */
+    /* Màu chữ, bạn có thể điều chỉnh màu chữ tùy ý */
+    padding: 0px 5px;
+    /* Kích thước nút */
+    font-size: 16px;
+    /* Kích thước chữ */
+    cursor: pointer;
+}
+
+
+#content #properties-list div tr>td {
+    border-top: 1px solid #E4E7E9;
+    padding: 10px 0px;
+}
+
+#content #properties-list div tr>td p {
+    font-size: 16px;
+    font-weight: 550;
+    color: #667085;
+}
+
+#content #properties-list div tr>td,
+#content #properties-list div tr>th {
+    padding-left: 20px;
+}
+
+#content #properties-list div #options{
+    margin-top: 20px;
+}
+
+
+#content #properties-list div #options button {
+    align-items: center;
+    background-color: #1B60FF;
+    border: 0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 20px;
+    max-width: 480px;
+    min-height: 40px;
+    min-width: 0px;
+    overflow: hidden;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    touch-action: manipulation;
+    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    width: 200px;
+    height: 35px;
+}
+
+#content #properties-list div #options button:hover,
+#content #properties-list div #options button:focus {
+    background-color: #0A66C2;
+    color: #ffffff;
+}
+
+#content #properties-list div #options button:active {
+    background: #0A66C2;
+    color: rgb(255, 255, 255, .7);
+}
+
+#content #properties-list div #options button:disabled {
+    cursor: not-allowed;
+    background: rgba(0, 0, 0, .08);
+    color: rgba(0, 0, 0, .3);
+}
+
+#content #properties-list div #pagination {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#content #properties-list div #pagination button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    /* Để tạo hình tròn */
+    border: 2px solid #8B8E99;
+    /* Đường viền màu đen, bạn có thể thay đổi màu sắc tùy ý */
+    color: #8B8E99;
+    background-color: #ffffff;
+    /* Màu nền, bạn có thể thay đổi màu sắc tùy ý */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

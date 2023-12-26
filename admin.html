@@ -24,6 +24,10 @@
                     <a href="">Products</a>
                 </li>
                 <li>
+                    <i class="fa-solid fa-list"></i>
+                    <a href="">Categories</a>
+                </li>
+                <li>
                     <i class="fa-solid fa-shoe-prints"></i>
                     <a href="">Properties</a>
                 </li>
@@ -166,6 +170,330 @@
                             </div>
                         </div>
 
+                    </div>
+                </div>
+            </div>
+            <div id="products">
+                <p>Products</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Product</th>
+                            <th>Category</th>
+                            <th>Stock</th>
+                            <th>Price</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-product-body">
+
+                    </tbody>
+                </table>
+                <div id="options">
+                    <div class="pagination" id="pagination">
+                        <!-- Pagination buttons will be dynamically added here -->
+                    </div>
+                    <button>+ Add Product</button>
+                </div>
+
+                <script>
+                    // Mảng chứa dữ liệu sản phẩm
+                    var products = [
+                        { id: "#12345", name: "Nike Air Force 1", category: "Nike", stock: 10, price: "1.000.000đ" },
+                        { id: "#12345", name: "Nike Air Force 1", category: "Nike", stock: 10, price: "1.000.000đ" },
+                        { id: "#12345", name: "Nike Air Force 1", category: "Nike", stock: 10, price: "1.000.000đ" },
+                        { id: "#12345", name: "Nike Air Force 1", category: "Nike", stock: 10, price: "1.000.000đ" },
+                        { id: "#12345", name: "Nike Air Force 1", category: "Nike", stock: 10, price: "1.000.000đ" },
+                        { id: "#12345", name: "Nike Air Force 1", category: "Nike", stock: 10, price: "1.000.000đ" },
+                        { id: "#12345", name: "Nike Air Force 1", category: "Nike", stock: 10, price: "1.000.000đ" },
+                        { id: "#12345", name: "Nike Air Force 1", category: "Nike", stock: 10, price: "1.000.000đ" },
+                        { id: "#12345", name: "Nike Air Force 1", category: "Nike", stock: 10, price: "1.000.000đ" },
+                    ];
+
+                    // Số dòng trên mỗi trang
+                    var rowsPerPage = 8;
+
+                    // Số lượng trang
+                    var totalPages = Math.ceil(products.length / rowsPerPage);
+
+                    // Hiển thị trang đầu tiên khi tải trang
+                    showPage(1);
+
+                    function showPage(page) {
+                        var startIndex = (page - 1) * rowsPerPage;
+                        var endIndex = startIndex + rowsPerPage;
+
+                        var tbody = document.getElementById("table-product-body");
+                        tbody.innerHTML = "";
+
+                        for (var i = startIndex; i < endIndex && i < products.length; i++) {
+                            var product = products[i];
+                            var row = "<tr>" +
+                                "<td><p>" + product.id + "</p></td>" +
+                                "<td><div id='product-name'><img src='img/product.webp' alt=''><p>" + product.name + "</p></div></td>" +
+                                "<td><p>" + product.category + "</p></td>" +
+                                "<td><p>" + product.stock + "</p></td>" +
+                                "<td><p>" + product.price + "</p></td>" +
+                                "<td><div id='button-action'><button><i class='fa-solid fa-pencil'></i></button><button><i class='fa-solid fa-trash'></i></button></div></td>" +
+                                "</tr>";
+                            tbody.innerHTML += row;
+                        }
+
+                        // Hiển thị các nút phân trang
+                        showPagination(page);
+                    }
+
+                    function showPagination(currentPage) {
+                        var pagination = document.getElementById("pagination");
+                        pagination.innerHTML = "";
+
+                        for (var i = 1; i <= totalPages; i++) {
+                            var button = document.createElement("button");
+                            button.innerText = i;
+                            button.className = "page-button";
+                            button.onclick = function () {
+                                showPage(parseInt(this.innerText));
+                            };
+                            pagination.appendChild(button);
+
+                            if (i === currentPage) {
+                                button.classList.add("active");
+                            }
+                        }
+                    }
+                </script>
+            </div>
+            <div id="categories">
+                <p>Categories</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Category Name</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-product-body">
+                        <tr>
+                            <td>#123</td>
+                            <td>Adidas</td>
+                            <td>
+                                <div id="button-action">
+                                    <button>
+                                        <i class='fa-solid fa-pencil'></i>
+                                    </button>
+                                    <button>
+                                        <i class='fa-solid fa-trash'></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#123</td>
+                            <td>Adidas</td>
+                            <td>
+                                <div id="button-action">
+                                    <button>
+                                        <i class='fa-solid fa-pencil'></i>
+                                    </button>
+                                    <button>
+                                        <i class='fa-solid fa-trash'></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#123</td>
+                            <td>Adidas</td>
+                            <td>
+                                <div id="button-action">
+                                    <button>
+                                        <i class='fa-solid fa-pencil'></i>
+                                    </button>
+                                    <button>
+                                        <i class='fa-solid fa-trash'></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#123</td>
+                            <td>Adidas</td>
+                            <td>
+                                <div id="button-action">
+                                    <button>
+                                        <i class='fa-solid fa-pencil'></i>
+                                    </button>
+                                    <button>
+                                        <i class='fa-solid fa-trash'></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div id="options">
+                    <div class="pagination" id="pagination">
+                        <!-- Pagination buttons will be dynamically added here -->
+                    </div>
+                    <button>+ Add Category</button>
+                </div>
+            </div>
+            <div id="properties" class="active">
+                <p>Properties</p>
+                <div id="properties-list">
+                    <div>
+                        <p>Colors</p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Color</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="table-product-body">
+                                <tr>
+                                    <td>#123</td>
+                                    <td>Adidas</td>
+                                    <td>
+                                        <div id="button-action">
+                                            <button>
+                                                <i class='fa-solid fa-pencil'></i>
+                                            </button>
+                                            <button>
+                                                <i class='fa-solid fa-trash'></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#123</td>
+                                    <td>Adidas</td>
+                                    <td>
+                                        <div id="button-action">
+                                            <button>
+                                                <i class='fa-solid fa-pencil'></i>
+                                            </button>
+                                            <button>
+                                                <i class='fa-solid fa-trash'></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#123</td>
+                                    <td>Adidas</td>
+                                    <td>
+                                        <div id="button-action">
+                                            <button>
+                                                <i class='fa-solid fa-pencil'></i>
+                                            </button>
+                                            <button>
+                                                <i class='fa-solid fa-trash'></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#123</td>
+                                    <td>Adidas</td>
+                                    <td>
+                                        <div id="button-action">
+                                            <button>
+                                                <i class='fa-solid fa-pencil'></i>
+                                            </button>
+                                            <button>
+                                                <i class='fa-solid fa-trash'></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div id="options">
+                            <div class="pagination" id="pagination">
+                                <!-- Pagination buttons will be dynamically added here -->
+                            </div>
+                            <button>+ Add Color</button>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Sizes</p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Size</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="table-product-body">
+                                <tr>
+                                    <td>#123</td>
+                                    <td>Adidas</td>
+                                    <td>
+                                        <div id="button-action">
+                                            <button>
+                                                <i class='fa-solid fa-pencil'></i>
+                                            </button>
+                                            <button>
+                                                <i class='fa-solid fa-trash'></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#123</td>
+                                    <td>Adidas</td>
+                                    <td>
+                                        <div id="button-action">
+                                            <button>
+                                                <i class='fa-solid fa-pencil'></i>
+                                            </button>
+                                            <button>
+                                                <i class='fa-solid fa-trash'></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#123</td>
+                                    <td>Adidas</td>
+                                    <td>
+                                        <div id="button-action">
+                                            <button>
+                                                <i class='fa-solid fa-pencil'></i>
+                                            </button>
+                                            <button>
+                                                <i class='fa-solid fa-trash'></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#123</td>
+                                    <td>Adidas</td>
+                                    <td>
+                                        <div id="button-action">
+                                            <button>
+                                                <i class='fa-solid fa-pencil'></i>
+                                            </button>
+                                            <button>
+                                                <i class='fa-solid fa-trash'></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div id="options">
+                            <div class="pagination" id="pagination">
+                                <!-- Pagination buttons will be dynamically added here -->
+                            </div>
+                            <button>+ Add Size</button>
+                        </div>
                     </div>
                 </div>
             </div>
